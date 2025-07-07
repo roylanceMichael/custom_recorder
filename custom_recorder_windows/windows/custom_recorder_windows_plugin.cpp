@@ -99,7 +99,6 @@ void CustomRecorderWindowsPlugin::HandleMethodCall(
         OutputDebugStringW((L"Executing command: " + command + L"\n").c_str());
         err = mciSendString(command.c_str(), NULL, 0, NULL);
         LogMciError(err, "record");
-
         recording_path_ = path;
     }
     result->Success();
@@ -118,7 +117,6 @@ void CustomRecorderWindowsPlugin::HandleMethodCall(
 
     err = mciSendString(L"close recorder", NULL, 0, NULL);
     LogMciError(err, "close");
-
     result->Success(flutter::EncodableValue(recording_path_));
   }
   else {

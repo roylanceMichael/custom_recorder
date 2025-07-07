@@ -10,7 +10,6 @@ class CustomRecorderWindows extends CustomRecorderPlatform {
 
   @override
   Future<void> startRecording({required String path}) async {
-    print("starting the recording now...${path}");
     return _channel.invokeMethod('startRecording', {'path': path});
   }
 
