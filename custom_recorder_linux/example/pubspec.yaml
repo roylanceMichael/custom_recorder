@@ -17,6 +17,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+  path_provider: ^2.0.11
+
   custom_recorder_linux:
     # When depending on this package from a real application you should use:
     #   custom_recorder_linux: ^x.y.z
