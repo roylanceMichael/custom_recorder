@@ -31,7 +31,6 @@ flutter:
         default_package: custom_recorder_ios_macos
       android:
         default_package: custom_recorder_android
-      windows:
-        default_package: custom_recorder_windows
+      custom_recorder_windows: ^0.0.1+2
       linux:
         default_package: custom_recorder_linux

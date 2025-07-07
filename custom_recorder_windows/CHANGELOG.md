@@ -1,3 +1,7 @@
-## 0.0.1
+## 0.0.1+2
 
-* TODO: Describe initial release.
+* Fix Windows build
+
+## 0.0.1+1
+
+* Initial release.
