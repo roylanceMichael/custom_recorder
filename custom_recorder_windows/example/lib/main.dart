@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
       });
     } else {
       final directory = await getApplicationDocumentsDirectory();
-      final path = '${directory.path}\recording.wav';
+      final path = '${directory.path}\\recording.wav';
       await _customRecorder.startRecording(path: path);
       setState(() {
         _isRecording = true;
