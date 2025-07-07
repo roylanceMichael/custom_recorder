@@ -16,6 +16,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  path_provider: ^2.0.11
+  permission_handler: ^12.0.1
 
   custom_recorder_android:
     # When depending on this package from a real application you should use:
@@ -82,4 +84,4 @@ flutter:
   #         weight: 700
   #
   # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/to/font-from-package
+  # see https://flutter.to/font-from-package

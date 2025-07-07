@@ -24,6 +24,9 @@ class CustomRecorderWindowsPlugin : public flutter::Plugin {
   void HandleMethodCall(
       const flutter::MethodCall<flutter::EncodableValue> &method_call,
       std::unique_ptr<flutter::MethodResult<flutter::EncodableValue>> result);
+
+ private:
+  std::string recording_path_;
 };
 
 }  // namespace custom_recorder_windows
