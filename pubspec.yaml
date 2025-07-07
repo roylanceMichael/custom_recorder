@@ -1,0 +1,37 @@
+name: custom_recorder
+description: "A new Flutter plugin project."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ^3.8.1
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  custom_recorder_platform_interface:
+    path: ./custom_recorder_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  plugin:
+    platforms:
+      ios:
+        default_package: custom_recorder_ios_macos
+      macos:
+        default_package: custom_recorder_ios_macos
+      android:
+        default_package: custom_recorder_android
+      windows:
+        default_package: custom_recorder_windows
+      linux:
+        default_package: custom_recorder_linux
