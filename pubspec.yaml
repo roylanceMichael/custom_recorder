@@ -27,11 +27,11 @@ flutter:
     platforms:
       android:
         package: com.example.custom_recorder # Use your package name
-        pluginClass: CustomRecorderAndroid
+        pluginClass: CustomRecorderAndroidPlugin
       ios:
-        pluginClass: CustomRecorderIosMacos
+        pluginClass: CustomRecorderIosMacosPlugin
       macos:
-        pluginClass: CustomRecorderIosMacos
+        pluginClass: CustomRecorderIosMacosPlugin
       windows:
         pluginClass: CustomRecorderWindowsPlugin
         # Use the C++ class name for Windows
