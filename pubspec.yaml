@@ -25,12 +25,16 @@ dev_dependencies:
 flutter:
   plugin:
     platforms:
-      ios:
-        default_package: custom_recorder_ios_macos
-      macos:
-        default_package: custom_recorder_ios_macos
       android:
-        default_package: custom_recorder_android
-      custom_recorder_windows: ^0.0.1+2
+        package: com.example.custom_recorder # Use your package name
+        pluginClass: CustomRecorderAndroid
+      ios:
+        pluginClass: CustomRecorderIosMacos
+      macos:
+        pluginClass: CustomRecorderIosMacos
+      windows:
+        pluginClass: CustomRecorderWindowsPlugin
+        # Use the C++ class name for Windows
       linux:
-        default_package: custom_recorder_linux
+        pluginClass: CustomRecorderLinuxPlugin 
+        # Use the C class name for Linux
