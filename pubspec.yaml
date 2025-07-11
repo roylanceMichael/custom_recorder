@@ -1,6 +1,6 @@
 name: custom_recorder
 description: "A new Flutter plugin project."
-version: 0.0.1
+version: 0.0.4
 homepage:
 
 environment:
@@ -26,7 +26,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.example.custom_recorder # Use your package name
+        package: com.example.custom_recorder_android # Use your package name
         pluginClass: CustomRecorderAndroidPlugin
       ios:
         pluginClass: CustomRecorderIosMacosPlugin
