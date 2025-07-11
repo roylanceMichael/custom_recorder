@@ -12,6 +12,14 @@ dependencies:
     sdk: flutter
   custom_recorder_platform_interface:
     path: ./custom_recorder_platform_interface
+  custom_recorder_android:
+    path: ./custom_recorder_android
+  custom_recorder_ios_macos:
+    path: ./custom_recorder_ios_macos
+  custom_recorder_linux:
+    path: ./custom_recorder_linux
+  custom_recorder_windows:
+    path: ./custom_recorder_windows
 
 dev_dependencies:
   flutter_test:
@@ -26,15 +34,12 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.example.custom_recorder_android # Use your package name
-        pluginClass: CustomRecorderAndroidPlugin
+        default_package: custom_recorder_android
       ios:
-        pluginClass: CustomRecorderIosMacosPlugin
+        default_package: custom_recorder_ios_macos
       macos:
-        pluginClass: CustomRecorderIosMacosPlugin
+        default_package: custom_recorder_ios_macos
       windows:
-        pluginClass: CustomRecorderWindowsPlugin
-        # Use the C++ class name for Windows
+        default_package: custom_recorder_windows
       linux:
-        pluginClass: CustomRecorderLinuxPlugin 
-        # Use the C class name for Linux
+        default_package: custom_recorder_linux
